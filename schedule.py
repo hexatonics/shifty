@@ -44,8 +44,11 @@ def shifts(day):
 # pprint(current_shifts())
 # pprint(len(current_shifts()))
 
-with open('testdata.json') as json_data:
-    d = json.load(json_data)
+try:
+    with open('testdata.json') as json_data:
+        d = json.load(json_data)
+except:
+    print("no test file")
 
 report = []
 class Shift(object):
@@ -75,7 +78,7 @@ def getit():
     t = etl.fromdicts(report)
     print(etl.lookall(t))
 
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 
 now =  datetime.now()
 start = now - timedelta(days=now.weekday())
@@ -86,6 +89,12 @@ print(end)
 print(start.strftime('%d-%b-%Y'))
 print(end.strftime('%d-%b-%Y'))
 
+import calendar
+#Monday is the deafult so no need to set
+calendar.setfirstweekday(calendar.MONDAY)
+print (list(calendar.day_abbr))
+print date.isoweekday(now)
+print date.today()
 
 
 #
