@@ -22,7 +22,7 @@ for key in doc.keys():
     for role in roles:
         print("\t ROLE ", role)
 
-        # You want a column that is 
+        # Ou 
         result = db.search((Q.shift.start.search('2017-12-15') & Q.department.name==key) & (Q.role.name==role))
         shifts = [str(r['shift']['start'][10:16] + " " + r['user']['firstname'] +  " " + r['user']['lastname']) for r in result]
         print(shifts)
