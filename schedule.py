@@ -44,12 +44,15 @@ def shifts(day):
 # pprint(current_shifts())
 # pprint(len(current_shifts()))
 
+
+json_data = pprint(shifts(2))
+
 try:
     with open('testdata.json') as json_data:
         d = json.load(json_data)
 except:
     print("no test file")
-
+sys.exit()
 report = []
 class Shift(object):
     ''' Shift view Object takes a raw shift dict from deep 7Shifts object, and turns it
@@ -93,8 +96,8 @@ import calendar
 #Monday is the deafult so no need to set
 calendar.setfirstweekday(calendar.MONDAY)
 print (list(calendar.day_abbr))
-print date.isoweekday(now)
-print date.today()
+print (date.isoweekday(now))
+print (date.today())
 
 
 #

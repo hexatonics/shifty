@@ -1,0 +1,30 @@
+'Management':
+  162208: 'Manager'
+  162209: 'Supervisor'
+  162210: 'Human Resources'
+
+'Bakery':
+  148609: 'Baker'
+  162221: "Baker's Assistant"
+
+'Kitchen':
+  139476: 'Chef'
+  139477: 'Assistant Chef'
+  163103: 'Cold Buffeteer'
+  158931: 'Cook'
+  161818: 'Salads'
+  148614: 'Runner'
+
+'Dish Crew':
+  162218: 'Dishwasher'
+  162219: 'Dish Distributor'
+
+'Behind the Scenes':
+  163106: 'Bread and Receiving'
+  163105: 'Broccoli'
+  163104: 'Prep'
+
+'Front of House':
+  148610: 'Cashier'
+  158990: 'Busser'
+  148612: "Maitre d'"
