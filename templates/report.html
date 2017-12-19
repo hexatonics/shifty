@@ -1,0 +1,24 @@
+<h1 class="department">MORNING KITCHEN</h1>
+<ul>
+{% for k in am_kitchen %}
+<li>
+    {{ k['role']['name'] }}
+    {{ k['shift']['start'][11:16] }}
+    {{ k['user']['firstname'] }}
+    {{ k['user']['lastname'] }}
+    {{ k['shift']['notes']}}
+  </li>
+  {% endfor %}
+</ul>
+<h1 class="department">EVENING KITCHEN</h1>
+<ul>
+{% for k in pm_kitchen %}
+<li>
+    {{ k['role']['name'] }}
+    {{ k['shift']['start'][11:16] }}
+    {{ k['user']['firstname'] }}
+    {{ k['user']['lastname'] }}
+    {{ k['shift']['notes']}}
+  </li>
+  {% endfor %}
+</ul>
